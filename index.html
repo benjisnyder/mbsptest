@@ -1,0 +1,101 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Compare Fiber</title>
+        <meta name="description" content="Compare the download times of various broadband speeds to that of fiber optic internet.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- http://realfavicongenerator.net/ -->
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="stylesheet" href="css/root.css">
+    </head>
+    <body>
+
+        <h1>How fast is fast?</h1>
+        <p>Compare the download times of various broadband speeds to that of <a href="https://fiber.google.com/about/">fiber</a> <a href="http://www.verizoninternet.com/fios-internet.html">optic</a> <a href="https://www.att.com/shop/u-verse/gigapower.html">internet</a>.</p>
+
+        <div class="column column--left">
+            <form class="form">
+                <label for="mbpsSpeed1">Speed 1</label>
+                <select id="mbpsSpeed1" name="mbpsSpeed">
+                    <option value="1">1 Mbps</option>
+                    <option value="5">5 Mbps</option>
+                    <option value="12" selected="selected">12 Mbps (Average U.S.)</option>
+                    <option value="24">24 Mbps (Average S. Korea)</option>
+                    <option value="50">50 Mbps</option>
+                    <option value="75">75 Mbps</option>
+                    <option value="100">100 Mbps (Fiber)</option>
+                    <option value="1000">1000 Mbps (Gigabit Fiber)</option>
+                </select>
+            </form>
+
+            <div id="graphic1" class="graphic" style="display: none;"><span id="graphicBar1" class="graphic__bar"></span><span id="graphic1Label"class="graphic__label"></span></div>
+        </div>
+
+        <div class="column column--right">
+            <form class="form">
+                <label for="mbpsSpeed2">Speed 2</label>
+                <select id="mbpsSpeed2" name="mbpsSpeed">
+                    <option value="1">1 Mbps</option>
+                    <option value="5">5 Mbps</option>
+                    <option value="12">12 Mbps (Average U.S.)</option>
+                    <option value="24">24 Mbps (Average S. Korea)</option>
+                    <option value="50">50 Mbps</option>
+                    <option value="75">75 Mbps</option>
+                    <option value="100">100 Mbps (Fiber)</option>
+                    <option value="1000" selected="selected">1000 Mbps (Gigabit Fiber)</option>
+                </select>
+            </form>
+
+            <div id="graphic2" class="graphic" style="display: none;"><span id="graphicBar2" class="graphic__bar"></span><span id="graphic2Label" class="graphic__label"></span></div>
+        </div>
+
+        <div id="footer">
+            <label for="fileSize">File Size</label>
+            <select id="fileSize" name="fileSize">
+                <option value="4">Song (4mb)</option>
+                <option value="30">Video (30mb)</option>
+                <option value="110">Audiobook (110mb)</option>
+                <option value="200" selected="selected">TV Show (200mb)</option>
+                <option value="600">HD TV Show (600mb)</option>
+                <option value="1500">Movie (1.5gb)</option>
+                <option value="4000">HD Movie (4gb)</option>
+            </select>
+
+            <a id="submitTest" class="button" href="" onclick="submitTest();return false;">Compare!</a>
+            <p class="note"><a href="https://www.linkedin.com/in/bencsnyder">Made by Ben Snyder</a> These are rough estimates but give you an idea of what various internet speeds might feel like. It doesn't take into account latency, bandwidth, and other variables associated with internet speed.</p>
+        </div>
+
+        <script src="js/root.js"></script>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-67744002-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+
+    </body>
+</html>
